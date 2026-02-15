@@ -1,0 +1,127 @@
+/* Reset some basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e90ff;
+}
+
+.controls button,
+.filter button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #1e90ff;
+  color: hwb(0 100% 0% / 0.788);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.controls button:hover,
+.filter button:hover {
+  background: #1c86ee;
+}
+
+.filter input,
+.favorites input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.status {
+  margin: 10px 0;
+  font-weight: bold;
+  height: 20px;
+  color: #ff4500;
+}
+
+.quote-display {
+  background: #f0f8ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  min-height: 100px;
+}
+
+.quote-display h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.quote-display p {
+  text-align: right;
+  font-style: italic;
+  color: #555;
+}
+
+.favorites {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.favorites ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.favorites li {
+  padding: 8px 10px;
+  background: #e6f0ff;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorites li button {
+  background: #ff4500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+.favorites li button:hover {
+  background: #e03e00;
+}
+
+/* Popup Overlay */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: none;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}

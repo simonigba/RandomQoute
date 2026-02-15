@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Generator Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔥 Quote Generator Pro 🔥</h1>
+
+    <div class="controls">
+      <button id="generateBtn">Generate Quote</button>
+      <button id="saveBtn">Save Quote</button>
+      <button id="copyBtn">Copy Quote</button>
+      <button id="autoBtn">Start Auto-Generate</button>
+    </div>
+
+    <div class="filter">
+      <input type="text" id="authorInput" placeholder="Filter by author">
+      <button id="filterBtn">Filter Quote</button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <div class="quote-display">
+      <h2 id="quoteText">Your quote will appear here...</h2>
+      <p id="quoteAuthor"></p>
+    </div>
+
+    <div class="favorites">
+      <h3>Favorites</h3>
+      <input type="text" id="searchFavInput" placeholder="Search favorites">
+      <ul id="favoritesList"></ul>
+    </div>
+  </div>
+
+  <!-- Overlay Popup -->
+  <div id="popup" class="popup">
+    <p id="popupText"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
