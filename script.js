@@ -1,3 +1,5 @@
+import { text } from "express";
+
 // References
 let generateBtn = document.getElementById("generateBtn");
 let saveBtn = document.getElementById("saveBtn");
@@ -74,10 +76,10 @@ async function generateQuote() {
     if (err.message === "Failed to fetch") {
       // Fallback hardcoded quotes
       const fallbackQuotes = [
-        { content: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
-        { content: "Be yourself; everyone else is already taken.", author: "Oscar Wilde" },
-        { content: "The journey of a thousand miles begins with one step.", author: "Lao Tzu" },
-        { text: "The best way to predict the future is to invent it.", author: "Alan Kay" },
+      { text: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
+      { text: "Be yourself; everyone else is already taken.", author: "Oscar Wilde" },
+      { text: "The journey of a thousand miles begins with one step.", author: "Lao Tzu" },
+      { text: "The best way to predict the future is to invent it.", author: "Alan Kay" },
       { text: "Do what you can, with what you have, where you are.", author: "Theodore Roosevelt" },
       { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
       { text: "Happiness depends upon ourselves.", author: "Aristotle" },
@@ -90,7 +92,7 @@ async function generateQuote() {
       { text: "Don’t count the days, make the days count.", author: "Muhammad Ali" },
       { text: "It always seems impossible until it’s done.", author: "Nelson Mandela" },
       {text: "Success is not the end product of luck, it is the product or result of hardwork", author: "Igba Simon"},
-       { text: "In the middle of every difficulty lies opportunity.", author: "Albert Einstein" },
+      { text: "In the middle of every difficulty lies opportunity.", author: "Albert Einstein" },
       { text: "Your time is limited, so don’t waste it living someone else’s life.", author: "Steve Jobs" },
       { text: "Everything you’ve ever wanted is on the other side of fear.", author: "George Addair" },
       { text: "Dream big and dare to fail.", author: "Norman Vaughan" },
